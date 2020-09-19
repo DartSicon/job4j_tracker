@@ -2,7 +2,7 @@ package ru.job4j.oop;
 
 public class Dentist extends Doctor {
 
-    MedicalDevice drill;
+    private MedicalDevice drill;
 
     public MedicalDevice getDrill() {
         return drill;

@@ -1,8 +1,8 @@
 package ru.job4j.oop;
 
-public class Builder {
+public class Builder extends Engineer{
 
-    TechnicalEquipment helmet;
+    private TechnicalEquipment helmet;
 
     public TechnicalEquipment getHelmet() {
         return helmet;

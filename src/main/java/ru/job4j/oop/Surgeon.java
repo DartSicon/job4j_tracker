@@ -2,7 +2,7 @@ package ru.job4j.oop;
 
 public class Surgeon extends Doctor {
 
-    MedicalDevice scalpel;
+    private MedicalDevice scalpel;
 
     public MedicalDevice getScalpel() {
         return scalpel;
