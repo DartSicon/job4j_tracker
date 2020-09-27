@@ -40,11 +40,11 @@ public class Tracker {
 
     public boolean replace(int id, Item item) {
         int index = indexOf(id);
-        if (index != -1) {
-            item.setId(id);
+        boolean rsl = index != -1;
+        if (rsl) {
             items[index] = item;
         }
-        return index != -1;
+        return rsl;
     }
 
     private int indexOf(int id) {
@@ -60,7 +60,8 @@ public class Tracker {
 
     public boolean delete(int id) {
         int index = indexOf(id);
-        if (index != -1) {
+        boolean rsl = index != -1;
+        if (rsl) {
             System.arraycopy(this.items, index + 1, this.items, index, this.size - index);
             this.items[this.size - 1] = null;
             this.size--;
