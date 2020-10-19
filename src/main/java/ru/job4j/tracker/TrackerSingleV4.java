@@ -1,10 +1,16 @@
 package ru.job4j.tracker;
 
+import ru.job4j.inheritance.TextReport;
+
 public class TrackerSingleV4 {
-    public Tracker tracker = new Tracker();
+    private Tracker tracker = new Tracker();
 
-    public TrackerSingleV4() {
+    private TrackerSingleV4() {
 
+    }
+
+    public Tracker getTracker() {
+        return this.tracker;
     }
 
     public static TrackerSingleV4 getInstance() {

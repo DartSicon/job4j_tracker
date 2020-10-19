@@ -8,9 +8,9 @@ public class TrackerSingleV3Test {
     @Test
     public void whenTrackerIsSingleton() {
         TrackerSingleV3 single1 = TrackerSingleV3.getInstance();
-        single1.tracker.add(new Item(1, "Test"));
+        single1.getTracker().add(new Item(1, "Test"));
         TrackerSingleV3 single2 = TrackerSingleV3.getInstance();
-        assertEquals(single2.tracker.findById(1).getName(), "Test");
+        assertEquals(single2.getTracker().findById(1).getName(), "Test");
     }
 
 }
