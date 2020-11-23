@@ -3,7 +3,7 @@ package ru.job4j.tracker;
 import java.time.LocalDateTime;
 import java.util.Random;
 
-public class Item {
+public class Item implements Comparable<Item>{
     private int id;
     private String name;
     private LocalDateTime created = LocalDateTime.now();
@@ -55,5 +55,24 @@ public class Item {
                 ", name='" + name + '\'' +
                 ", created=" + created +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Item o) {
+        int result = 0;
+
+        result = Integer.compare(this.id, o.getId());
+
+        if (result != 0) {
+            return result;
+        }
+
+        result = this.name.compareTo(o.name);
+
+        if (result != 0) {
+            return result;
+        }
+
+        return this.created.compareTo(o.getCreated());
     }
 }
