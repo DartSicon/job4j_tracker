@@ -59,20 +59,6 @@ public class Item implements Comparable<Item>{
 
     @Override
     public int compareTo(Item o) {
-        int result = 0;
-
-        result = Integer.compare(this.id, o.getId());
-
-        if (result != 0) {
-            return result;
-        }
-
-        result = this.name.compareTo(o.name);
-
-        if (result != 0) {
-            return result;
-        }
-
-        return this.created.compareTo(o.getCreated());
+        return this.name.compareTo(o.name);
     }
 }
