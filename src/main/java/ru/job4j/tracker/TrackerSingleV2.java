@@ -19,5 +19,4 @@ public class TrackerSingleV2 {
         return instance;
     }
 
-
 }

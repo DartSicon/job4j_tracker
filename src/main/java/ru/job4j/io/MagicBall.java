@@ -13,14 +13,14 @@ public class MagicBall {
         input.nextLine();
         int answer = new Random().nextInt(3);
         switch (answer) {
-            case YES:
-                System.out.println("Да");
-                break;
-            case NO:
-                System.out.println("Нет");
-                break;
-            default:
-                System.out.println("Может быть");
+        case YES:
+            System.out.println("Да");
+            break;
+        case NO:
+            System.out.println("Нет");
+            break;
+        default:
+            System.out.println("Может быть");
         }
 
     }

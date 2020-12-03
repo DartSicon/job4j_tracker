@@ -15,7 +15,7 @@ public class UniqueText {
             if (!check.contains(duplicateWord)) {
                 rsl = false;
                 break;
-            };
+            }
         }
         return rsl;
     }

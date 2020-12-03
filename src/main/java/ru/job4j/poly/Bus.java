@@ -6,7 +6,10 @@ public class Bus implements Transport {
 
     @Override
     public void ride() {
-        System.out.println("Автобус поехал с " + this.passengers + " пассажирами. Кол-во топлива: " + this.fuel);
+        System.out.println("Автобус поехал с "
+                + this.passengers
+                + " пассажирами. Кол-во топлива: "
+                + this.fuel);
     }
 
     @Override

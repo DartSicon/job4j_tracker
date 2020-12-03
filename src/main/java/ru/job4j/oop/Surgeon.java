@@ -8,7 +8,7 @@ public class Surgeon extends Doctor {
         return scalpel;
     }
 
-    public Patient startOperation (Patient patient, MedicalDevice scalpel) {
+    public Patient startOperation(Patient patient, MedicalDevice scalpel) {
         return new Patient();
     }
 }

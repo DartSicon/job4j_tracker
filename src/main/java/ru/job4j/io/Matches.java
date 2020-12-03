@@ -8,9 +8,9 @@ public class Matches {
 
     public static void main(String[] args) {
         int totalCount = 11;
-        System.out.println("Смысл игры в следующем. На столе лежат 11 спичек. " +
-                           "Два игрока по очереди берут от 1 до 3 спичек. " +
-                           "Выигрывает тот, кто забрал последние спички.");
+        System.out.println("Смысл игры в следующем. На столе лежат 11 спичек. "
+                + "Два игрока по очереди берут от 1 до 3 спичек. "
+                + "Выигрывает тот, кто забрал последние спички.");
         int move = PLAYER_1;
         Scanner input = new Scanner(System.in);
 

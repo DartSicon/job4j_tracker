@@ -44,7 +44,6 @@ public class StartUI {
                 new FindByNameAction(output),
                 new ExitAction()));
 
-
         new StartUI(output).init(input, tracker, actions);
     }
 }

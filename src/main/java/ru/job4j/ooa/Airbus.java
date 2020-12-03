@@ -28,8 +28,6 @@ public final class Airbus extends Aircraft {
 
     @Override
     public String toString() {
-        return "Airbus{"
-                + "name='" + name + '\''
-                + '}';
+        return "Airbus{" + "name='" + name + '\'' + '}';
     }
 }

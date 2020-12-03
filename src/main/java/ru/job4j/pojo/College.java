@@ -10,9 +10,14 @@ public class College {
         student.setGroup("Э-102");
         student.setReceiptDate(new Date());
 
-        System.out.println("Студент: " + student.getFio() + ", " +
-                           "группа: " + student.getGroup() + ", " +
-                           "дата поступления: " + student.getReceiptDate());
+        System.out.println("Студент: "
+                + student.getFio()
+                + ", "
+                + "группа: "
+                + student.getGroup()
+                + ", "
+                + "дата поступления: "
+                + student.getReceiptDate());
 
     }
 }

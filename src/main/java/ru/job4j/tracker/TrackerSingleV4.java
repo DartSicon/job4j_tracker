@@ -17,7 +17,6 @@ public class TrackerSingleV4 {
         return Holder.INSTANCE;
     }
 
-
     private static final class Holder {
         private static final TrackerSingleV4 INSTANCE = new TrackerSingleV4();
     }

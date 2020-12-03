@@ -7,9 +7,6 @@ public class Shop {
     }
 
     public static Product of(String name, int price) {
-        if ("Oil".equals(name)) {
-            //return new LiquidationProduct(name, price);
-        }
         return new Product(name, price);
     }
 }

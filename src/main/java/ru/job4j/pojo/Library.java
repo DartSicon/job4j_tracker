@@ -18,8 +18,11 @@ public class Library {
 
         for (int index = 0; index < books.length; index++) {
             Book book = books[index];
-            System.out.println("Книга: " + books[index].getName() + ", " +
-                               "Кол-во страниц: " + book.getCount() );
+            System.out.println("Книга: "
+                    + books[index].getName()
+                    + ", "
+                    + "Кол-во страниц: "
+                    + book.getCount());
         }
 
         Book temp = books[0];
@@ -27,14 +30,21 @@ public class Library {
         books[3] = temp;
 
         for (int index = 0; index < books.length; index++) {
-            System.out.println("Книга: " + books[index].getName() + ", " +
-                               "Кол-во страниц: " + books[index].getCount() );
+            System.out
+                    .println("Книга: "
+                            + books[index].getName()
+                            + ", "
+                            + "Кол-во страниц: "
+                            + books[index].getCount());
         }
 
         for (int index = 0; index < books.length; index++) {
             if (books[index].getName().equals(CLEAN_CODE_TITLE)) {
-                System.out.println("Книга: " + books[index].getName() + ", " +
-                                   "Кол-во страниц: " + books[index].getCount() );
+                System.out.println("Книга: "
+                        + books[index].getName()
+                        + ", "
+                        + "Кол-во страниц: "
+                        + books[index].getCount());
             }
         }
     }
