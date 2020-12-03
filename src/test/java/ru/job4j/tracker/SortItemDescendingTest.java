@@ -11,9 +11,9 @@ public class SortItemDescendingTest {
     @Test
     public void whenCallSortThenItemsDescending() {
         List<Item> items = new ArrayList<>();
-        items.add(new Item(3));
-        items.add(new Item(1));
-        items.add(new Item(2));
+        items.add(new Item(3, "3"));
+        items.add(new Item(1, "1"));
+        items.add(new Item(2, "2"));
 
         Collections.sort(items, new SortItemDescending());
         Assert.assertEquals(3, items.get(0).getId());
