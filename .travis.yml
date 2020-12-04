@@ -15,7 +15,7 @@ after_success:
 notifications:
   email:
     recipients:
-      cursedkun@gmail.com
+     - cursedkun@gmail.com
     on_success: never # default: change
     on_failure: always # default: always
 
